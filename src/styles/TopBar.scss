@@ -1,0 +1,64 @@
+
+
+.topBar{
+    @media (max-width: 1000px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        padding: 0 10px;
+    }
+    padding: 0 250px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #000000;
+    &Name{
+        H1{
+            font-size: 2rem;
+            align-content: center;
+            color: #ffffff;
+            text-transform: uppercase;
+            cursor: default;
+            text-shadow: 1px 1px 1px #919191,
+                       0px 2px 1px #919191,
+                       0px 3px 1px #919191,
+                       0px 4px 1px #E15C0D,
+                       0px 5px 1px #E15C0D,
+                       0px 6px 1px #E15C0D,;
+        }
+    }
+    &Ul{
+        @media (max-width: 1000px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            text-align: center;
+        }
+        text-transform: uppercase;
+        background-color: #000000;
+        margin: 1rem 0 ;
+        padding: 0 ;
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        
+        &Li{
+            width: auto;
+            letter-spacing: 1px;
+            display: grid;
+            font-size: 1.2rem;
+            border-radius: 1px;
+            a{
+                align-self: center;
+                font-weight: 500;
+                text-decoration: inherit;
+                transition: all .3s;
+                &:hover{
+                        color: #E15C0D;
+                }
+            }
+            
+        }
+    }
+}

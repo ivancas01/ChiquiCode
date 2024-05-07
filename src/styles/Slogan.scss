@@ -1,0 +1,83 @@
+.slogan{
+    @media (max-width: 1000px) {
+        grid-template-columns: auto;
+        padding: 50px 0;
+    }
+    background-color: #000000;
+    padding: 150px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
+    gap: 60px;
+    &Logo{
+        align-self: center;
+        text-align: end;
+        &H1{
+            @media (max-width: 1000px) {
+                font-size: 7rem;
+                text-align: center;
+            }
+            text-transform: uppercase;
+            margin: auto;
+            font-size: 16rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            cursor: default;
+            text-shadow: 1px 1px 1px #919191,
+                       0px 2px 1px #919191,
+                       0px 3px 1px #919191,
+                       0px 4px 1px #919191,
+                       0px 5px 1px #919191,
+                       0px 6px 1px #919191,
+                       0px 7px 1px #919191,
+                       0px 8px 1px #E15C0D,
+                       0px 9px 1px #E15C0D,
+                       0px 10px 1px #E15C0D,
+                       0px 11px 1px #E15C0D,
+                       0px 12px 1px #E15C0D,;
+            transition: all .2s;
+            &:hover{
+                transform: scale(1.1);
+                -webkit-transform:scale(1.1);
+                color: #ff8843;
+                text-shadow: 1px 1px 1px #E15C0D,
+                       0px 2px 1px #E15C0D,
+                       0px 3px 1px #E15C0D,
+                       0px 4px 1px #E15C0D,
+                       0px 5px 1px #E15C0D,
+                       0px 6px 1px #E15C0D,
+                       0px 7px 1px #919191,
+                       0px 8px 1px #919191,
+                       0px 9px 1px #919191,
+                       0px 10px 1px #919191,
+                       0px 11px 1px #919191,
+                       0px 12px 1px #919191,;
+            }
+            
+        }
+    }
+    &Text{
+        align-self: center;
+        &H1{
+            @media (max-width: 1000px) {
+                font-size: 3rem;
+                text-align: center;
+                padding: 0 10px;
+            }
+            text-transform: uppercase;
+            margin: auto;
+            font-size: 4rem;
+            
+        }
+        &P{
+            @media (max-width: 1000px) {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 0 20px;
+                
+            }
+            margin: auto;
+            font-size: 3rem;
+        }
+    }
+}

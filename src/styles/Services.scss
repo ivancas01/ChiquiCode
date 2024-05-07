@@ -1,0 +1,97 @@
+.services{
+    @media (max-width: 1000px) {
+        grid-template-columns: auto;
+        margin: 20px;
+        gap: 10px;
+        height: auto;
+    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+    gap: 5px;
+    transition: all .6s;
+    &Card1{
+        @media (max-width: 1000px) {
+            padding: 20px;
+            background-color: #ffffff;
+            color: #000000;
+            &H1{
+                font-size: 2.3rem;
+            }
+            &P{
+                font-size: 1.3rem;
+            }
+        }
+        background-color: #2e2e2e;
+        height: 400px;
+        align-content: center;
+        text-align: center;
+        padding: 20px;
+        transition: all .6s;
+        &H1{
+        }
+        &P{
+            font-size: 1.5rem;
+        }
+        &:hover{
+            background-color: #ffffff;
+            color: #000000;
+        }
+    }
+    &Card2{
+        @media (max-width: 1000px) {
+            padding: 20px;
+            background-color: #919191;
+            color: #000000;
+            &H1{
+                font-size: 2.3rem;
+            }
+            &P{
+                font-size: 1.3rem;
+            }
+        }
+        background-color: #2e2e2e;
+        height: 400px;
+        align-content: center;
+        text-align: center;
+        padding: 20px;
+        transition: all .6s;
+        &H1{
+        }
+        &P{
+            font-size: 1.5rem;
+        }
+        &:hover{
+            background-color: #919191;
+            color: #000000;
+        }
+    }
+    &Card3{
+        @media (max-width: 1000px) {
+            padding: 20px;
+            background-color: #E15C0D;
+            color: #000000;
+            &H1{
+                font-size: 2.3rem;
+            }
+            &P{
+                font-size: 1.3rem;
+            }
+        }
+        background-color: #2e2e2e;
+        height: 400px;
+        align-content: center;
+        text-align: center;
+        padding: 20px;
+        transition: all .6s;
+        &H1{
+        }
+        &P{
+            font-size: 1.5rem;
+        }
+        &:hover{
+            background-color: #E15C0D;
+            color: #000000;
+        }
+    }
+}
