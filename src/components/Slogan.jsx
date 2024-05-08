@@ -5,7 +5,7 @@ export const Slogan = () => {
             <h1 className='sloganLogoH1'>CQC</h1>
         </div>
         <div className='sloganText'>
-            <h1 className='sloganTextH1'>ChiquCode</h1>
+            <h1 className='sloganTextH1'>ChiquiCode</h1>
             <p className='sloganTextP'>Transformando tus ideas en realidad digital.</p>
         </div>
     </div>

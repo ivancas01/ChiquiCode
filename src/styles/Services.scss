@@ -1,20 +1,22 @@
 .services{
     @media (max-width: 1000px) {
         grid-template-columns: auto;
-        margin: 20px;
-        gap: 10px;
+        margin: 5px;
         height: auto;
+        border-bottom: none;
+        gap: 10px;
     }
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 5px;
     margin-bottom: 50px;
-    gap: 10px;
     transition: all .6s;
+    border-bottom: 15px  solid #db804b;
     &Card1{
         @media (max-width: 1000px) {
             padding: 20px;
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #2e2e2eea;
+            color: #ffffff;
             &H1{
                 font-size: 2.3rem;
             }
@@ -22,28 +24,28 @@
                 font-size: 1.3rem;
             }
         }
-        background-color: #2e2e2e;
+        background-color: #2e2e2eea;
         height: 400px;
         align-content: center;
         text-align: center;
         padding: 20px;
         transition: all .6s;
         &H1{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         &P{
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
         &:hover{
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #db804b;
+            color: #ffffff;
         }
     }
     &Card2{
         @media (max-width: 1000px) {
             padding: 20px;
-            background-color: #919191;
-            color: #000000;
+            background-color: #db804b;
+            color: #ffffff;
             &H1{
                 font-size: 2.3rem;
             }
@@ -58,21 +60,21 @@
         padding: 20px;
         transition: all .6s;
         &H1{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         &P{
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
         &:hover{
-            background-color: #919191;
-            color: #000000;
+            background-color: #db804b;
+            color: #ffffff;
         }
     }
     &Card3{
         @media (max-width: 1000px) {
             padding: 20px;
-            background-color: #E15C0D;
-            color: #000000;
+            background-color: #2e2e2eea;
+            color: #ffffff;
             &H1{
                 font-size: 2.3rem;
             }
@@ -80,20 +82,20 @@
                 font-size: 1.3rem;
             }
         }
-        background-color: #2e2e2e;
+        background-color: #2e2e2eea;
         height: 400px;
         align-content: center;
         text-align: center;
         padding: 20px;
         transition: all .6s;
         &H1{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         &P{
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
         &:hover{
-            background-color: #E15C0D;
+            background-color: #db804b;
             color: #ffffff;
         }
     }
@@ -101,7 +103,7 @@
         @media (max-width: 1000px) {
             padding: 20px;
             background-color: #db804b;
-            color: #000000;
+            color: #ffffff;
             &H1{
                 font-size: 2.3rem;
             }
@@ -116,10 +118,10 @@
         padding: 20px;
         transition: all .6s;
         &H1{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         &P{
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
         &:hover{
             background-color: #db804b;
