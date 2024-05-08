@@ -1,14 +1,22 @@
+import { Contact } from "../components/Contact";
+import { SecondSlogan } from "../components/SecondSlogan";
 import { Services } from "../components/Services";
 import { Slogan } from "../components/Slogan";
 import { TopBar } from "../components/TopBar";
 
 export const IndexPage = () => {
+	const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
 	return (
 		<div className="indexPage">
-			<TopBar/>
+			<TopBar scrollToSection={scrollToSection}/>
 			<Slogan/>
-			<h1 className="indexPageH1">Nuestros servicios</h1>
+			<SecondSlogan id="secondSloganSection"/>
+			<h1 className="indexPageH1">¿Que servicios ofrecemos?</h1>
 			<Services/>
+			<Contact id="contactSection"/>
 		</div>
 	);
 };

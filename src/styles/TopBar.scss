@@ -14,12 +14,19 @@
     grid-template-columns: 1fr 1fr;
     background-color: #000000;
     &Name{
+        @media (max-width: 1000px) {
+            display: grid;
+            justify-content: center;
+        }
+        display: grid;
+        justify-content: start;
         H1{
+            width: 9ch;
             font-size: 2rem;
             align-content: center;
             color: #ffffff;
             text-transform: uppercase;
-            cursor: default;
+            cursor: pointer;
             text-shadow: 1px 1px 1px #919191,
                        0px 2px 1px #919191,
                        0px 3px 1px #919191,

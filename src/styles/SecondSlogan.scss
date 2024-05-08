@@ -1,0 +1,26 @@
+.secondSlogan{
+    @media (max-width: 1000px) {
+        padding: 10px;
+    }
+    background-color: #db804b;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 150px;
+    &H1{
+        @media (max-width: 1000px) {
+            font-size: 2rem;
+        }
+        font-size: 4rem;
+        margin: 20px;
+        text-transform: uppercase;
+    }
+    &P{
+        @media (max-width: 1000px) {
+            font-size: 1.5rem;
+        }
+        justify-self: center;
+        font-size: 2.5rem;
+        margin: 20px;
+    }
+}

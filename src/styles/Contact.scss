@@ -1,0 +1,82 @@
+.contact{
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin-top: 100px;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    align-items: center;
+    &Text{
+        justify-self: center;
+        text-align: center;
+        &H1{
+            @media (max-width: 1000px) {
+                font-size: 3rem;
+            }
+            margin: auto;
+            font-size: 4rem;
+        }
+        &P{
+            @media (max-width: 1000px) {
+                font-size: 2rem;
+            }
+            width: 10ch;
+            margin: auto;
+            font-size: 3.5rem;
+            border-bottom: 5px solid #db804b;
+        }
+    }
+    &Form{
+        display: grid;
+        &H1{
+            @media (max-width: 1000px) {
+                margin-top: 50px;
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            text-transform: uppercase;
+            font-size: 2.4rem;
+            margin-bottom: 50px;
+        }
+        form{
+            @media (max-width: 1000px) {
+                font-size: 2rem;
+                width: auto;
+            }
+            display: grid;
+            gap: 20px;
+            width: 70%;
+            input{
+                font-size: 1.3rem;
+                font-family: "Saira Condensed", sans-serif !important;
+                padding: 10px;
+                border: none;
+                background-color: #000000;
+                border-bottom: 1px solid #db804b;
+                &::placeholder{
+                    color: #c7c7c7;
+                }
+            }
+            textarea{
+                font-size: 1.3rem;
+                font-family: "Saira Condensed", sans-serif !important;
+                padding: 10px;
+                border: none;
+                background-color: #000000;
+                border-bottom: 1px solid #db804b;
+                color: #db804b;
+                min-height: 70px;
+                &::placeholder{
+                    color: #c7c7c7;
+                }
+            }
+            .buttonForm{
+                margin-top: 40px;
+                width: auto;
+                justify-self: center;
+            }
+        }
+    }
+}

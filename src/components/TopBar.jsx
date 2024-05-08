@@ -1,25 +1,25 @@
-import { Link } from 'react-router-dom'
 
-export const TopBar = () => {
-  return (
-    <div className="topBar">
-        <div className="topBarName">
-            <h1 className="topBarNameH1" >chiquicode</h1>
+export const TopBar = ({ scrollToSection }) => {
+
+    return (
+        <div id="topBarSection" className="topBar">
+            <div className="topBarName">
+                <h1 className="topBarNameH1" >chiquicode</h1>
+            </div>
+            <ul className="topBarUl">
+                <li className="topBarUlLi">
+                    <a>Inicio</a>
+                </li>
+                <li className="topBarUlLi">
+                    <a onClick={() => scrollToSection('secondSloganSection')}>Servicios</a>
+                </li>
+                <li className="topBarUlLi">
+                    <a>Nosotros</a>
+                </li>
+                <li className="topBarUlLi">
+                    <a onClick={() => scrollToSection('contactSection')}>Contacto</a>
+                </li>
+            </ul>
         </div>
-        <ul className="topBarUl">
-            <li className="topBarUlLi">
-                <Link to={"/"}>Inicio</Link>
-            </li>
-            <li className="topBarUlLi">
-                <Link to={"/collections"}>Servicios</Link>
-            </li>
-            <li className="topBarUlLi">
-                <Link to={"/Products"}>Nosotros</Link>
-            </li>
-            <li className="topBarUlLi">
-                <Link to={"/Products"}>Contacto</Link>
-            </li>
-        </ul>
-    </div>
-  )
+    )
 }
