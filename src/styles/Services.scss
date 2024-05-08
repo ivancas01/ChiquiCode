@@ -6,9 +6,9 @@
         height: auto;
     }
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 50px;
-    gap: 5px;
+    gap: 10px;
     transition: all .6s;
     &Card1{
         @media (max-width: 1000px) {
@@ -29,9 +29,10 @@
         padding: 20px;
         transition: all .6s;
         &H1{
+            font-size: 2.5rem;
         }
         &P{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         &:hover{
             background-color: #ffffff;
@@ -57,9 +58,10 @@
         padding: 20px;
         transition: all .6s;
         &H1{
+            font-size: 2.5rem;
         }
         &P{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         &:hover{
             background-color: #919191;
@@ -85,13 +87,43 @@
         padding: 20px;
         transition: all .6s;
         &H1{
+            font-size: 2.5rem;
         }
         &P{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         &:hover{
             background-color: #E15C0D;
+            color: #ffffff;
+        }
+    }
+    &Card4{
+        @media (max-width: 1000px) {
+            padding: 20px;
+            background-color: #db804b;
             color: #000000;
+            &H1{
+                font-size: 2.3rem;
+            }
+            &P{
+                font-size: 1.3rem;
+            }
+        }
+        background-color: #2e2e2e;
+        height: 400px;
+        align-content: center;
+        text-align: center;
+        padding: 20px;
+        transition: all .6s;
+        &H1{
+            font-size: 2.5rem;
+        }
+        &P{
+            font-size: 1.4rem;
+        }
+        &:hover{
+            background-color: #db804b;
+            color: #ffffff;
         }
     }
 }

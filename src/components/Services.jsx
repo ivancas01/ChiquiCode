@@ -12,7 +12,11 @@ export const Services = () => {
         </div>
         <div className="servicesCard3">
             <h1 className="servicesCard3H1">Consultoría y asesoramiento tecnológico</h1>
-            <p className="servicesCard2P">Brindar orientación experta en la selección de tecnologías, arquitecturas y estrategias para proyectos de desarrollo de software.</p>
+            <p className="servicesCard3P">Brindar orientación experta en la selección de tecnologías, arquitecturas y estrategias para proyectos de desarrollo de software.</p>
+        </div>
+        <div className="servicesCard4">
+            <h1 className="servicesCard4H1">Mantenimiento y reparación de equipos de computación</h1>
+            <p className="servicesCard4P">Servicio experto en mantenimiento y reparación de equipos de cómputo para asegurar su óptimo rendimiento.</p>
         </div>
     </div>
   )
