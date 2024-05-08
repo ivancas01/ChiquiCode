@@ -5,12 +5,12 @@
         height: auto;
         gap: 20px;
     }
-    background-color: #000000;
+    background-color: #0a0a0a;
     display: grid;
     grid-template-columns: repeat(2, 400px);
     justify-content: center;
     gap: 60px;
-    height: 95vh;
+    height: 90vh;
     &Logo{
         align-self: center;
         text-align: end;
@@ -69,7 +69,13 @@
             text-transform: uppercase;
             margin: auto;
             font-size: 6rem;
-            
+            display: block;
+            white-space: nowrap;
+            border-right: 4px solid;
+            width: 9ch;
+            animation: typing 1s steps(12),
+            blink .5s infinite step-end alternate;
+            overflow: hidden;
         }
         &P{
             @media (max-width: 1000px) {
@@ -82,4 +88,11 @@
             font-size: 4rem;
         }
     }
+}
+
+@keyframes typing{
+    from{width: 0;}
+}
+@keyframes blink{
+    50% {border-color: transparent;}
 }
