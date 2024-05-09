@@ -1,0 +1,128 @@
+.ourTeam{
+    display: grid;
+    &Text{
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            padding: 30px;
+        }
+        padding: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+        align-items: center;
+        gap: 50px;
+        &H1{
+            @media (max-width: 1000px) {
+                justify-self: center;
+                text-align: center;
+                width: auto;
+                font-size: 3rem;
+            }
+            justify-self: end;
+            width: 500px;
+            margin: 10px;
+            font-size: 3.5rem;
+            text-align: end;
+        }
+        &P{
+            @media (max-width: 1000px) {
+                justify-self: center;
+                text-align: center;
+                width: auto;
+                font-size: 1.1rem;
+            }
+            text-align: start;
+            width: 500px;
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+    }
+    &Base{
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            padding: 30px;
+        }
+        padding: 100px;
+        display: grid;
+        text-align: center;
+        background-color: #db804b;
+        &H1{
+            @media (max-width: 1000px) {
+                justify-self: center;
+                text-align: center;
+                width: auto;
+                font-size: 2.5rem;
+            }
+            text-transform: uppercase;
+            margin: 10px;
+            font-size: 3rem;
+            margin-bottom: 50px;
+        }
+        &Items{
+            @media (max-width: 1000px) {
+                grid-template-columns: 1fr;
+            }
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            &One{
+                &H1{
+                    @media (max-width: 1000px) {
+                        justify-self: center;
+                        text-align: center;
+                        width: auto;
+                        font-size: 3rem;
+                    }
+                    margin: auto;
+                    font-size: 4rem;
+                }
+                &P1{
+                    @media (max-width: 1000px) {
+                        justify-self: center;
+                        text-align: center;
+                        width: auto;
+                        font-size: 2rem;
+                    }
+                    margin: auto;
+                    font-size: 4rem;
+                }
+                &P2{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    &People{
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            padding: 20px;
+        }
+        display: grid;
+        justify-content: center;
+        padding: 100px;
+        text-align: center;
+        &H1{
+            text-transform: uppercase;
+            font-size: 4rem;
+        }
+        &P{
+            margin: auto;
+            text-transform: uppercase;
+            font-size: 10rem;
+            white-space: nowrap;
+            border-right: 3px solid;
+            width: 1ch;
+            animation: typing .1s steps(1),
+            blink .3s infinite step-end alternate;
+            overflow: hidden;
+        }
+    }
+    
+}
+
+@keyframes typing{
+    from{width: 0;}
+}
+@keyframes blink{
+    50% {border-color: transparent;}
+}

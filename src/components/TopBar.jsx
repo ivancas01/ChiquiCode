@@ -1,23 +1,24 @@
+import { Link } from "react-router-dom"
 
-export const TopBar = ({ scrollToSection }) => {
+export const TopBar = () => {
 
     return (
         <div id="topBarSection" className="topBar">
             <div className="topBarName">
-                <h1 className="topBarNameH1" >chiquicode</h1>
+                <h1 className="topBarNameH1" >QUIRACODE</h1>
             </div>
             <ul className="topBarUl">
                 <li className="topBarUlLi">
-                    <a>Inicio</a>
+                    <Link to={"/"}>Inicio</Link>
                 </li>
                 <li className="topBarUlLi">
-                    <a onClick={() => scrollToSection('secondSloganSection')}>Servicios</a>
+                    <Link to={'/?scrollTo=secondSloganSection'}>Servicios</Link>
                 </li>
                 <li className="topBarUlLi">
-                    <a>Nosotros</a>
+                    <Link to={'/OurTeam'}>Nosotros</Link>
                 </li>
                 <li className="topBarUlLi">
-                    <a onClick={() => scrollToSection('contactSection')}>Contacto</a>
+                <Link to={'/?scrollTo=contactSection'}>Contacto</Link>
                 </li>
             </ul>
         </div>
