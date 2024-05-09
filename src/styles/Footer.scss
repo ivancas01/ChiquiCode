@@ -1,0 +1,47 @@
+.footer{
+    background-color: #111111;
+    display: grid;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0 20px 0;
+    &Email{
+        justify-self: center;
+        text-align: center;
+        &H1{
+            @media (max-width: 1000px) {
+                font-size: 2.3rem;
+                border: none;
+            }
+            border-bottom: 2px solid #ffffff;
+            margin: auto;
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+        &P{
+            @media (max-width: 1000px) {
+                margin-top: 20px;
+                font-size: 1.7rem;
+            }
+            margin: auto;
+            font-size: 2.5rem;
+            
+        }
+    }
+    &SocialMedia{
+        @media (max-width: 1000px) {
+            display: grid;
+            margin: 50px 0;
+        }
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+    &Legal{
+        &P{
+            margin: auto;
+        }
+    }
+}

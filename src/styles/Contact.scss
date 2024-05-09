@@ -1,13 +1,14 @@
 .contact{
     @media (max-width: 1000px) {
         grid-template-columns: 1fr;
-        padding: 10px;
-        margin-top: 100px;
+        padding: 20px;
+        margin: 60px 0px;
     }
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 40px;
     align-items: center;
+    margin: 60px 0px;
     &Text{
         justify-self: center;
         text-align: center;
