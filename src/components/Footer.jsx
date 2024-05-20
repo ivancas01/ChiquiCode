@@ -8,8 +8,8 @@ export const Footer = () => {
         <div className="footerSocialMedia">
             <a href="">Facebook</a>
             <a href="">Instagram</a>
-            <a href="">Linkedin</a>
-            <a href="">TikTok</a>
+            {/* <a href="">Linkedin</a>
+            <a href="">TikTok</a> */}
             <a href="">Whatsapp</a>
         </div>
         <div className="footerLegal">
