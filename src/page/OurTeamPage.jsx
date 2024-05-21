@@ -9,7 +9,7 @@ export const OurTeamPage = () => {
             <div className="ourTeam">
                 <div className="ourTeamText">
                     <h1 className="ourTeamTextH1">Transforma tus sueños en realidad digital con NOSOTROS</h1>
-                    <p className="ourTeamTextP">Bienvenido a PSYCHOCODE, tu socio confiable desde Chiquinquirá para el desarrollo de software y web. Nos destacamos por nuestra pasión, innovación y la excelencia en el desarrollo de cada proyecto. Nuestro equipo altamente calificado está comprometido en brindarte soluciones digitales personalizadas que impulsarán tu éxito en línea. Con nosotros, puedes esperar calidad, creatividad y un servicio excepcional en cada paso del camino. ¡Únete a nosotros y lleva tu presencia digital al siguiente nivel!</p>
+                    <p className="ourTeamTextP">Bienvenido a CODELAND SOLUTIONS, tu socio confiable desde Chiquinquirá para el desarrollo de software y web. Nos destacamos por nuestra pasión, innovación y la excelencia en el desarrollo de cada proyecto. Nuestro equipo altamente calificado está comprometido en brindarte soluciones digitales personalizadas que impulsarán tu éxito en línea. Con nosotros, puedes esperar calidad, creatividad y un servicio excepcional en cada paso del camino. ¡Únete a nosotros y lleva tu presencia digital al siguiente nivel!</p>
                 </div>
                 <div className="ourTeamBase">
                     <h1 className="ourTeamBaseH1">Nuestras bases</h1>

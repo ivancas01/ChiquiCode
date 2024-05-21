@@ -9,7 +9,7 @@ export const TopBar = ({scrollToSection}) => {
     return (
         <div id="topBarSection" className="topBar">
             <div className="topBarName">
-                <h1 className="topBarNameH1" onClick={() => navigate("/")}>PSYCHOCODE</h1>
+                <h1 className="topBarNameH1" onClick={() => navigate("/")}>CODELAND SOLUTIONS</h1>
             </div>
             <ul className="topBarUl">
                 <li className="topBarUlLi">

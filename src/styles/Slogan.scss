@@ -62,18 +62,18 @@
         align-self: center;
         &H1{
             @media (max-width: 1000px) {
-                font-size: 3rem;
+                font-size: 2rem;
                 text-align: center;
                 padding: 0 10px;
             }
             text-transform: uppercase;
             margin: auto;
-            font-size: 6rem;
+            font-size: 4rem;
             display: block;
             white-space: nowrap;
             border-right: 4px solid;
-            width: 10ch;
-            animation: typing 1.2s steps(12),
+            width: 17ch;
+            animation: typing 1.2s steps(17),
             blink .5s infinite step-end alternate;
             overflow: hidden;
         }
@@ -85,7 +85,7 @@
                 
             }
             margin: auto;
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
     }
 }

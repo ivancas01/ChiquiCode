@@ -3,7 +3,7 @@ export const Footer = () => {
     <div className='footer'>
         <div className='footerEmail'>
             <h1 className='footerEmailH1'>Comunicate con nosotros</h1>
-            <p className='footerEmailP'>psychocode@gmail.com</p>
+            <p className='footerEmailP'>solutionscodeland@gmail.com</p>
         </div>
         <div className="footerSocialMedia">
             <a href="">Facebook</a>
@@ -13,7 +13,7 @@ export const Footer = () => {
             <a href="">Whatsapp</a>
         </div>
         <div className="footerLegal">
-            <p className="footerLegalP">2023 - DISEÑO Y DESARROLLO POR PSYCHOCODE.</p>
+            <p className="footerLegalP">2023 - DISEÑO Y DESARROLLO POR CODELAND SOLUTIONS.</p>
             <p className="footerLegalP">Chiquinquirá, Boyacá</p>
         </div>
     </div>
