@@ -1,10 +1,8 @@
 services:
   web:
-    image: nginx:alpine
+    build: .
     container_name: chiquicode
     restart: unless-stopped
-    volumes:
-      - ./dist:/usr/share/nginx/html:ro
     networks:
       - proxy
     labels:
