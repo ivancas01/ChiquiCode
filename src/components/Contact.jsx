@@ -1,60 +1,60 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    lastname: "",
-    email: "",
-    telephone: "",
-    message: "",
-  });
+    name: '',
+    lastname: '',
+    email: '',
+    telephone: '',
+    message: '',
+  })
 
-  const [message, setMessage] = useState(null); // Agregado el estado para mensajes
+  const [message, setMessage] = useState(null) // Agregado el estado para mensajes
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setMessage(null); // Reinicia el mensaje
+    e.preventDefault()
+    setMessage(null) // Reinicia el mensaje
 
     try {
-      const response = await fetch("http://localhost:3000/send-email", {
-        method: "POST",
+      const response = await fetch('http://localhost:3000/send-email', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData), // Envía toda la data del formulario
-      });
+      })
 
-      const data = await response.json();
+      const data = await response.json()
 
       if (response.ok) {
-        setMessage({ type: "success", text: "¡Correo enviado exitosamente!" });
+        setMessage({ type: 'success', text: '¡Correo enviado exitosamente!' })
         setFormData({
-          name: "",
-          lastname: "",
-          email: "",
-          telephone: "",
-          message: "",
-        });
+          name: '',
+          lastname: '',
+          email: '',
+          telephone: '',
+          message: '',
+        })
 
         // Espera 3 segundos antes de recargar la página
         setTimeout(() => {
-          window.location.reload(); // Recarga la página
-        }, 3000); // 3000 milisegundos = 3 segundos
+          window.location.reload() // Recarga la página
+        }, 3000) // 3000 milisegundos = 3 segundos
       } else {
-        setMessage({ type: "error", text: `Error: ${data.error}` });
+        setMessage({ type: 'error', text: `Error: ${data.error}` })
       }
     } catch (error) {
-      console.error("Error al enviar el correo:", error);
+      console.error('Error al enviar el correo:', error)
       setMessage({
-        type: "error",
-        text: "Ocurrió un error al enviar el correo. Inténtalo de nuevo más tarde.",
-      });
+        type: 'error',
+        text: 'Ocurrió un error al enviar el correo. Inténtalo de nuevo más tarde.',
+      })
     }
-  };
+  }
 
   return (
     <>
@@ -111,5 +111,5 @@ export const Contact = () => {
         <div className={`message ${message.type}`}>{message.text}</div>
       )}
     </>
-  );
-};
+  )
+}
