@@ -7,7 +7,7 @@ services:
       - proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.chiquicode.rule=Host(`chiquicode.com`)"
+      - "traefik.http.routers.chiquicode.rule=Host(`chiquicode.com`) || Host(`www.chiquicode.com`)"
       - "traefik.http.services.chiquicode.loadbalancer.server.port=80"
 
 networks:
