@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
 // Import images
-import urbanFlowImg from '../assets/projects/urban-flow.png';
-import cyberCoreImg from '../assets/projects/cyber-core.png';
-import neonGridImg from '../assets/projects/neon-grid.png';
+import alquilerVestidos from '../assets/projects/AlquilerVest2.png';
+import restaurante from '../assets/projects/SistemaRest2.png';
+import alquilerVentas from '../assets/projects/AlquilerVentas2.png';
 
 const projects = [
   {
@@ -13,24 +13,24 @@ const projects = [
     name: 'SISTEMA DE ALQUILER',
     tag: 'APP DE ESCRITORIO',
     year: '2024',
-    description: 'Sistema de alquiler de vestidos con gran gestion de inventario, clientes y reservas. Ademas de un sistema de registro de pagos, control de ingresos y gestion y control de actividad de los usuarios.',
-    image: urbanFlowImg
+    description: 'Plataforma integral para la gestión de alquiler de vestidos, diseñada para optimizar el control de inventario, clientes y reservas. Incorpora un sistema robusto de pagos, seguimiento de ingresos y monitoreo de actividad, brindando una operación más eficiente, organizada y segura.',
+    image: alquilerVestidos
   },
   {
     id: 2,
     name: 'SISTEMA OPERATIVO Y GESTOR DE RESTAURANTES',
     tag: 'WEB APP',
     year: '2026',
-    description: 'Sistema de gestion de restaurantes, creado para optimizar la experiencia de los usuarios y la gestion de los restaurantes. Cuenta con un sistema de registro de pagos, control de ingresos y gestion y control de actividad de los usuarios, Ademas, el sistema tambien se encarga de gestionar la infraestructura del restaurante, los producctos, reservas y personal.',
-    image: cyberCoreImg
+    description: 'Solución digital avanzada para la gestión de restaurantes, enfocada en optimizar procesos y mejorar la experiencia operativa. Integra control de ingresos, registro de pagos, administración de productos, reservas, personal e infraestructura, todo en una plataforma centralizada y eficiente.',
+    image: restaurante
   },
   {
     id: 3,
     name: 'SISTEMA DE INVENTARIOS, VENTA Y ALQUILER',
     tag: 'WEB APP',
     year: '2026',
-    description: 'Sistema de inventarios, venta y alquiler creado para optimizar la experiencia de los usuarios y la gestion de los inventarios. Cuenta con un sistema de registro de pagos, control de ingresos y gestion y control de actividad de los usuarios, Ademas, el sistema tambien se encarga de gestionar la infraestructura del inventario, los producctos, reservas y personal.',
-    image: cyberCoreImg
+    description: 'Sistema completo para la gestión de inventarios, ventas y alquileres, diseñado para maximizar la eficiencia operativa. Permite el control de productos, reservas y personal, junto con un sólido módulo de ingresos y actividad, facilitando una administración ágil, precisa y escalable.',
+    image: alquilerVentas
   },
 ];
 
