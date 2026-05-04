@@ -64,7 +64,7 @@ const Projects = ({ onInquiry }) => {
                   alignItems: 'center',
                   padding: '40px 20px',
                   cursor: 'pointer',
-                  transition: 'none'
+                  color: 'var(--text-white)'
                 }}
               >
                 <div>
