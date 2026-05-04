@@ -1,23 +1,45 @@
-export const Footer = () => {
+import React from 'react';
+
+const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footerEmail">
-        <h1 className="footerEmailH1">Comunicate con nosotros</h1>
-        <p className="footerEmailP">solutionscodeland@gmail.com</p>
+    <footer style={{
+      padding: '60px 5%',
+      backgroundColor: '#000',
+      borderTop: '1px solid #333',
+      textAlign: 'center'
+    }}>
+      <div className="font-heading" style={{ fontSize: '2rem', color: '#ff6b00', marginBottom: '20px' }}>
+        CHIQUICODE
       </div>
-      <div className="footerSocialMedia">
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        {/* <a href="">Linkedin</a>
-            <a href="">TikTok</a> */}
-        <a href="">Whatsapp</a>
+      <p style={{ color: '#666', fontSize: '0.9rem', marginBottom: '40px' }}>
+        © {new Date().getFullYear()} CHIQUICODE. TODOS LOS DERECHOS RESERVADOS. <br />
+        HECHO DESDE CHIQUINQUIRÁ, BOYACÁ.
+      </p>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', flexWrap: 'wrap' }}>
+        {[
+          { name: 'INSTAGRAM', url: 'https://www.instagram.com/chiquicode_/' },
+        ].map(social => (
+          <a
+            key={social.name}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: 'white',
+              textDecoration: 'none',
+              fontSize: '0.8rem',
+              fontWeight: 700,
+              letterSpacing: '1px'
+            }}
+            onMouseOver={(e) => e.target.style.color = '#ff6b00'}
+            onMouseOut={(e) => e.target.style.color = 'white'}
+          >
+            {social.name}
+          </a>
+        ))}
       </div>
-      <div className="footerLegal">
-        <p className="footerLegalP">
-          2023 - DISEÑO Y DESARROLLO POR CODELAND SOLUTIONS.
-        </p>
-        <p className="footerLegalP">Chiquinquirá, Boyacá</p>
-      </div>
-    </div>
-  )
-}
+    </footer>
+  );
+};
+
+export default Footer;
