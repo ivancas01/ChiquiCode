@@ -127,7 +127,7 @@ const Contact = ({ preloadData }) => {
             gap: '20px',
             backgroundColor: 'var(--bg-black)',
             padding: 'clamp(30px, 5vw, 60px)',
-            boxShadow: '15px 15px 0px rgba(0,0,0,0.2)'
+            boxShadow: '8px 8px 0px rgba(0,0,0,0.2)'
           }}
         >
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>

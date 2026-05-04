@@ -51,7 +51,7 @@ const Clients = () => {
             <div
               key={idx}
               style={{
-                fontSize: '1.8rem',
+                fontSize: 'clamp(1rem, 4vw, 1.8rem)',
                 fontWeight: 900,
                 color: 'var(--text-white)',
                 fontFamily: 'Outfit',

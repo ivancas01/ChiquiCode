@@ -38,6 +38,9 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 body {
@@ -45,8 +48,10 @@ body {
   color: var(--text-white);
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  width: 100%;
   background-image: var(--grid-pattern);
   background-size: 40px 40px;
+  position: relative;
 }
 
 h1,
@@ -63,6 +68,7 @@ h4,
 /* Layout Utilities */
 .section-padding {
   padding: 100px 5%;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -73,7 +79,7 @@ h4,
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
   gap: 32px;
 }

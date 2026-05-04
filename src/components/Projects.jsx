@@ -116,7 +116,7 @@ const Projects = ({ onInquiry }) => {
                 maxHeight: '85vh',
                 overflowY: 'auto',
                 position: 'relative',
-                boxShadow: '30px 30px 0px rgba(0,0,0,0.5)'
+                boxShadow: '15px 15px 0px rgba(0,0,0,0.5)'
               }}
             >
               {/* Elegant Close Button */}

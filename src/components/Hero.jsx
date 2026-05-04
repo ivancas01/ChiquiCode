@@ -33,6 +33,19 @@ const Hero = () => {
     { top: '40%', right: '5%', size: '50px', duration: 16 }
   ];
 
+  const [logoText, setLogoText] = useState("");
+  const fullLogoText = "CQC";
+
+  React.useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setLogoText(fullLogoText.slice(0, i + 1));
+      i++;
+      if (i === fullLogoText.length) clearInterval(interval);
+    }, 400); // Slower since it's only 3 letters
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="inicio" style={{
       minHeight: '70vh',
@@ -101,10 +114,25 @@ const Hero = () => {
               textShadow: isHovered ? hoverShadow : defaultShadow,
               fontFamily: 'Outfit',
               fontWeight: 900,
-              letterSpacing: '-0.02em'
+              letterSpacing: '-0.02em',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
             }}
           >
-            CQC
+            {logoText}
+            <motion.span
+              animate={{ opacity: [0, 1, 0] }}
+              transition={{ repeat: 4, duration: 0.8 }}
+              style={{
+                display: 'inline-block',
+                width: 'clamp(5px, 2vw, 15px)',
+                height: '0.8em',
+                backgroundColor: isHovered ? 'var(--text-white)' : 'var(--primary-orange)',
+                marginLeft: '10px',
+                verticalAlign: 'middle'
+              }}
+            />
           </h1>
         </motion.div>
 
