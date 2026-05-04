@@ -77,7 +77,7 @@ const Contact = ({ preloadData }) => {
         maxWidth: '1400px',
         margin: '0 auto',
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
         gap: '60px'
       }}>
         <motion.div
@@ -85,7 +85,7 @@ const Contact = ({ preloadData }) => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-heading" style={{ fontSize: 'clamp(3rem, 10vw, 5rem)', marginBottom: '20px', lineHeight: 0.9 }}>
+          <h2 className="font-heading" style={{ fontSize: 'clamp(2.2rem, 6vw, 4.5rem)', marginBottom: '20px', lineHeight: 1 }}>
             ¿ESTÁS PREPARADO PARA <br /> <span style={{ color: 'var(--bg-black)' }}>EL CAMBIO?</span>
           </h2>
           <p style={{ fontSize: 'clamp(1.2rem, 4vw, 1.8rem)', fontWeight: 700, marginBottom: '40px' }}>

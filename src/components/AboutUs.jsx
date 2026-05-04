@@ -63,7 +63,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="font-heading"
-            style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', marginBottom: '30px' }}
+            style={{ fontSize: 'clamp(2.2rem, 6vw, 4.5rem)', marginBottom: '20px', lineHeight: 1 }}
           >
             ACERCA DE <span className="text-orange">CHIQUICODE</span>
           </motion.h2>

@@ -191,7 +191,7 @@ const Navbar = ({ toggleTheme, theme }) => {
 
       <style dangerouslySetInnerHTML={{
         __html: `
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
           .hide-mobile { display: none; }
           .mobile-toggle { display: flex !important; }
         }

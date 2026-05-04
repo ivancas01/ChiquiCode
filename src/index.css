@@ -71,6 +71,17 @@ h4,
   overflow-x: hidden;
 }
 
+@media (max-width: 1024px) {
+  .section-padding {
+    padding: 80px 5%;
+  }
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
 @media (max-width: 768px) {
   .section-padding {
     padding: 60px 5%;

@@ -47,7 +47,7 @@ const Projects = ({ onInquiry }) => {
   return (
     <section id="proyectos" className="section-padding" style={{ backgroundColor: 'var(--bg-black)' }}>
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-        <h2 className="font-heading" style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', marginBottom: '50px', textAlign: 'right' }}>
+        <h2 className="font-heading" style={{ fontSize: 'clamp(2.2rem, 6vw, 4.5rem)', marginBottom: '50px', textAlign: 'right' }}>
           Proyectos <span className="text-orange">Destacados</span>
         </h2>
 
@@ -204,7 +204,7 @@ const Projects = ({ onInquiry }) => {
 
                 <style dangerouslySetInnerHTML={{
                   __html: `
-                  @media (min-width: 992px) {
+                  @media (min-width: 768px) {
                     .project-modal-grid {
                       grid-template-columns: 1.2fr 1fr !important;
                       gap: 80px !important;

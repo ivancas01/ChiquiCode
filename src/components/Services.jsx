@@ -43,7 +43,7 @@ const Services = ({ onInquiry }) => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="font-heading"
-          style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', marginBottom: '60px' }}
+          style={{ fontSize: 'clamp(2.2rem, 6vw, 4.5rem)', marginBottom: '60px' }}
         >
           Nuestros <span className="text-orange">Servicios</span>
         </motion.h2>
