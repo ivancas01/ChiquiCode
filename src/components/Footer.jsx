@@ -8,7 +8,7 @@ const Footer = () => {
       borderTop: '1px solid #333',
       textAlign: 'center'
     }}>
-      <div className="font-heading" style={{ fontSize: '2rem', color: '#ff6b00', marginBottom: '20px' }}>
+      <div className="font-heading" style={{ fontSize: '2rem', color: 'var(--primary-orange)', marginBottom: '20px' }}>
         CHIQUICODE
       </div>
       <p style={{ color: '#666', fontSize: '0.9rem', marginBottom: '40px' }}>
@@ -31,7 +31,7 @@ const Footer = () => {
               fontWeight: 700,
               letterSpacing: '1px'
             }}
-            onMouseOver={(e) => e.target.style.color = '#ff6b00'}
+            onMouseOver={(e) => e.target.style.color = 'var(--primary-orange)'}
             onMouseOut={(e) => e.target.style.color = 'white'}
           >
             {social.name}
